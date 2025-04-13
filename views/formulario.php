@@ -10,6 +10,11 @@
 
 <!-- El formulario está diseñado para ser responsivo y utiliza Bootstrap para el estilo. --> 
 <body class="bg-light">
+
+<!-- Incluye el archivo de configuración de la base de datos y la clase Producto para manejar la lógica de negocio. -->
+
+<?php include 'navbar.php'; ?>
+
     <div class="container mt-5">
         <h2 class="mb-4">Agregar Nuevo Producto</h2>
 
@@ -23,7 +28,7 @@
          <!-- El formulario envía una solicitud POST a "guardar.php" para procesar la información del producto. -->
          <!-- Los campos de entrada son obligatorios y se validan en el lado del cliente. -->
          <!-- El botón de envío tiene la clase "btn btn-primary" para aplicar estilos de Bootstrap. -->
-          
+
         <form action="../guardar.php" method="POST">
             <div class="mb-3">
                 <label for="nombre" class="form-label">Nombre del Producto</label>
@@ -36,5 +41,9 @@
             <button type="submit" class="btn btn-primary">Guardar</button>
         </form>
     </div>
+
+<!-- Incluye el archivo de pie de página para cerrar la estructura HTML y agregar información adicional. -->
+<?php include 'footer.php'; ?>
+
 </body>
 </html>

@@ -4,7 +4,17 @@
     <meta charset="UTF-8">
     <title>Agregar Producto</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Honk&display=swap" rel="stylesheet">
 </head>
+
+<video autoplay muted loop id="video-fondo">
+    <source src="../medios/VIDEO_FONDO_ALGO.mp4" type="video/mp4">
+    Tu navegador no soporta videos en HTML5.
+</video>
 
 <!-- El siguiente código es un formulario HTML para agregar un nuevo producto a una base de datos. El formulario incluye campos para el nombre y el precio del producto, y al enviarlo, se redirige a la página "guardar.php" para procesar la información. Si la inserción es exitosa, se muestra un mensaje de éxito. -->
 
@@ -16,7 +26,7 @@
 <?php include 'navbar.php'; ?>
 
     <div class="container mt-5">
-        <h2 class="mb-4">Agregar Nuevo Producto</h2>
+        <h2 class="mb-4" id="Nom_pro">Agregar Nuevo Producto</h2>
 
         <?php if (isset($_GET['exito']) && $_GET['exito'] == 1): ?>
             <div class="alert alert-success">✅ Producto guardado exitosamente.</div>
@@ -31,7 +41,7 @@
 
         <form action="../guardar.php" method="POST">
             <div class="mb-3">
-                <label for="nombre" class="form-label">Nombre del Producto</label>
+                <label for="nombre" class="form-label" >Nombre del Producto</label>
                 <input type="text" name="nombre" id="nombre" class="form-control" required>
             </div>
             <div class="mb-3">

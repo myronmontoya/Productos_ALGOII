@@ -1,0 +1,41 @@
+
+
+    #video-fondo {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        min-width: 100%;
+        min-height: 100%;
+        z-index: -1;
+        object-fit: cover;
+    }
+
+    .contenido {
+        position: relative;
+        z-index: 1;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        color: white;
+    }
+
+
+    .honk {
+        font-family: "Honk", system-ui;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        font-variation-settings:
+          "MORF" 15,
+          "SHLN" 50;
+      }
+    
+    #Nom_pro {
+      
+        font-family: "Honk";
+        text-align: center;
+        font-size: 60px;
+    }
